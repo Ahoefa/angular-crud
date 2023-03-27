@@ -1,0 +1,50 @@
+input[type="text"].post-add {
+  padding: var(--post-add-padding, 0.7rem 0.3rem);
+  position: relative;
+  width: var(--post-add-width, 100%);
+  margin: 0;
+  border-radius: var(--post-add-border-radius, 0);
+  border-top: var(--post-add-border-top-width, 0) solid
+    var(--post-border-color, transparent);
+  border-left: var(--post-add-border-left-width, 0) solid
+    var(--post-border-color, transparent);
+  border-right: var(--post-add-border-right-width, 0) solid
+    var(--post-border-color, transparent);
+  border-bottom: var(--post-add-border-bottom-width, 0.05rem) solid
+    var(--post-add-border-color, hsl(198deg, 10%, 46%));
+  height: var(--post-add-height, 1rem);
+  color: var(--post-add-color, hsl(198deg, 0%, 0%));
+  box-shadow: none;
+  display: inline-block;
+  max-height: var(--post-add-max-height, 1.2rem);
+  font-size: var(--post-add-max-height, 0.8rem);
+  background: transparent;
+  transition: border-color 200ms ease-in-out;
+  outline: 0;
+}
+input.post-add:focus {
+  border-bottom-width: var(--post-add-bottom-width, 2.5px);
+  border-top: var(--post-add-border-top-width, 0) solid
+    var(--post-border-color, transparent);
+  border-left: var(--post-add-border-left-width, 0) solid
+    var(--post-border-color, transparent);
+  border-right: var(--post-add-border-right-width, 0) solid
+    var(--post-border-color, transparent);
+  border-image: linear-gradient(
+    to right,
+    var(--post-add-color, hsl(198deg, 100%, 32%)) 95%,
+    var(--post-add-color, hsl(198deg, 100%, 32%)) 95%
+  );
+  border-image-slice: 1;
+}
+
+input.post-add:not([readonly]) {
+  background: linear-gradient(
+      to bottom,
+      var(--text-input-color, hsl(198deg, 100%, 32%)) 95%,
+      var(--text-input-color, hsl(198deg, 100%, 32%)) 95%
+    )
+    no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 200ms ease-in-out;
+}

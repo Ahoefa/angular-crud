@@ -1,0 +1,19 @@
+/* Add application styles & imports to this file! */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --post-add-border-radius: 2;
+  --post-add-border-top-width: 0.03;
+  --post-add-border-left-width: 0.03;
+  --post-add-border-right-width: 0.03;
+  --post-add-border-top-color: hsl(198deg, 10%, 46%);
+  --post-add-border-bottom-width: 0.03rem;
+}
+
+body,
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}

@@ -1,0 +1,5 @@
+<app-post-add (valueChange)="savePost($event)" [value]="post?.title"></app-post-add>
+<div class="post-list-container">
+  <app-post-list [posts]="posts$ | async" (postChange)="updatePost($event)"></app-post-list>
+  <!-- <button type="button" class="delete" title="delete post" (click)="delete(post)">Delete</button> -->
+</div>

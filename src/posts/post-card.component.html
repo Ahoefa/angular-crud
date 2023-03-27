@@ -1,0 +1,16 @@
+<div id="card" class="card" [class]="cssClass" [ngClass]="ngClass">
+  <div class="card-header">
+    <!-- <input id="header" [(ngModel)]="posts.title" placeholder="post"> -->
+    <!-- Selection par attribute: [attribute] -->
+    <!-- Selection par classe: .nom-class-css  -->
+    <!-- Selection par id: #nom-id  -->
+    <!-- Selection par nom de balise: nom-balise  -->
+    <ng-content select="[card-header]"></ng-content>
+  </div>
+  <div class="card-block">
+    <ng-content select="[card-block]"></ng-content>
+  </div>
+  <div class="card-footer">
+    <ng-content select="[card-footer]"></ng-content>
+  </div>
+</div>

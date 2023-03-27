@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "title": "Fernanda & Paul voient du bleue",
+      "comments": [],
+      "id": 2
+    },
+    {
+      "title": "Pendant que Paul me dit, lui il voit claire",
+      "comments": [],
+      "id": 3
+    },
+    {
+      "title": "Salut",
+      "comments": [],
+      "id": 6
+    },
+    {
+      "title": "Bonne nuit",
+      "comments": [],
+      "id": 7
+    },
+    {
+      "title": "Hello World!",
+      "comments": [],
+      "id": 8
+    },
+    {
+      "title": "Bonsoir tout le monde",
+      "comments": [],
+      "id": 9
+    },
+    {
+      "title": "coucou le monde",
+      "comments": [],
+      "id": 10
+    },
+    {
+      "title": "bref",
+      "comments": [],
+      "id": 11
+    }
+  ],
+  "comments": []
+}

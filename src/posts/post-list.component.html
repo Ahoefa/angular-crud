@@ -1,0 +1,15 @@
+<ng-container *ngIf="posts">
+  <div class="post-card-list-container">
+    <!-- <input id="header" [(ngModel)]="posts.title" placeholder="post"> -->
+    <ng-container *ngFor="let post of posts">
+      <div class="card-container">
+        <app-post-card [clickable]="true">
+          <span id="header" card-header >{{ post.title }}</span>
+          <button card-footer type="button" class="delete" title="delete post" (click)="delete(post)">Delete </button>
+          <button card-footer type="button" (click)="onSelect(post)">update</button>
+          <!-- <button type="button"  (click)="save()">Save</button> -->
+        </app-post-card>
+      </div>
+    </ng-container>
+  </div>
+</ng-container>
